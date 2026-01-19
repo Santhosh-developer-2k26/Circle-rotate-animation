@@ -1,0 +1,61 @@
+#animation {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    border-radius: 50%;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear ;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+.red {animation-name:c1; background-color: red; position: absolute; top: 0px; left: 150px;}
+.blue {animation-name:c2 ; background-color: blue; position: absolute; top: 75px;left: 280px;}
+.green {animation-name:c3 ; background-color: green; position: absolute; top: 225px; left: 280px;}
+.yellow {animation-name:c4 ; background-color: yellow; position: absolute; top: 300px; left: 150px;}
+.purple {animation-name:c5 ; background-color: purple; position: absolute; top: 225px; left: 20px;}
+.orange {animation-name:c6 ; background-color: orange; position: absolute; top: 75px; left: 20px;}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}   
+
+@keyframes c1 {
+    from { background-color: red;}
+    to { background-color: orange;}
+}
+@keyframes c2 {
+    from { background-color: blue;}
+    to { background-color: red;}
+}
+@keyframes c3 {
+    from { background-color: green;}
+    to { background-color: blue;}
+}
+@keyframes c4 {
+    from { background-color: yellow;}
+    to { background-color: green;}
+}
+@keyframes c5 {
+    from { background-color: purple;}
+    to { background-color: yellow;}
+}
+@keyframes c6 {
+    from { background-color: orange;}
+    to { background-color: purple;}
+}
